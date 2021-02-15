@@ -1,0 +1,19 @@
+<div class="blogs">
+  <div class="container">
+    <div class="blogs__row row">
+      <% blogs.forEach(blog =>{%>
+      <div class="col-4 card">
+        <img src="<%=blog.img %>" alt="" class="card__img" />
+        <div class="card__inner">
+          <h2 class="card__title"><%= blog.title %></h2>
+          <p class="card_description"><%= blog.description %></p>
+          <div class="card__row row">
+            <span class="card__time"><%=blog.time %> </span>
+            <a href="#" class="card__link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <%}) %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.hero {
+  &__row {
+    padding: 0 25px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    color: #000000;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #4a5568;
+  }
+  &__item{
+    position: relative;
+  }
+  &__coffe{
+    position: absolute;
+    top: 54px;
+    right: 150px;
+  }
+}

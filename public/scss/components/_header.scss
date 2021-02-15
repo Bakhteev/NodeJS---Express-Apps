@@ -1,0 +1,47 @@
+.header {
+  &__inner {
+    padding: 37px 0 29px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  &__input {
+    outline: none;
+    border: none;
+  }
+  &__link {
+    margin-right: 35px;
+
+    a {
+      svg {
+        fill: #454444;
+        transition: 0.3s;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      a {
+        svg {
+          fill: #6b46c1;
+        }
+      }
+    }
+  }
+}
+.nav {
+  &__item {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+}

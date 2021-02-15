@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %> 
+
+  <body>
+
+    <%-include('./partials/nav.ejs')  %> 
+
+    <div class="blogs content">
+      <h2>About us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, rerum?
+        Qui placeat magnam odio amet explicabo itaque alias! Aut, ipsa.
+      </p>
+      <% if(blogs){ %> <% blogs.forEach(blog =>{ %>
+      <h3><%= blog.title %></h3>
+      <p><%= blog.snippet %></p>
+      <% }) %> <% }else{ %> there is nothing <%} %>
+    </div>
+    <%- include('./partials/footer.ejs') %> 
+  </body>
+</html>

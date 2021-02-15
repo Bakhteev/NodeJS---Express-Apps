@@ -1,0 +1,43 @@
+.main-post {
+  margin-top: 113px;
+  &__row {
+    justify-content: space-between;
+    &--top {
+      border: 1px solid #e2e2e2;
+      box-sizing: border-box;
+      box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+      border-radius: 5px;
+    }
+    &--bottom {
+    }
+  }
+  &__item {
+    box-sizing: border-box;
+    padding: 42px 40px 52px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2d3748;
+  }
+  &__description {
+    margin: 30px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #718096;
+  }
+  &__time {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #718096;
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2d3748;
+  }
+}

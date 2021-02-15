@@ -1,0 +1,35 @@
+.big-blog {
+  margin: 43px 0 31px;
+  &__row {
+    background: #f7fafc;
+    justify-content: space-between;
+  }
+  &__item {
+    padding: 98px 0 0 63px;
+    box-sizing: border-box;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  &__desription {
+    margin: 24px 0 31px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #718096;
+  }
+  &__time {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4a5568;
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}
