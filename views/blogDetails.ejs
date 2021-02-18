@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <section class="blog-detail">
+      <div class="container">
+        <img src="<%= blog.imgUrl%>" alt="" style="width: 100%"/>
+        <h1 class="blog-title"><%= blog.title%></h1>
+        <span><%=blog.date%></span>
+        <hr />
+        <p class=""><%= blog.description%></p>
+        <a href="" class="delete" data-doc="<%= blog._id%>">delete</a>
+      </div>
+    </section>
+    <%- include('./partials/footer.ejs')%>
+  </body>
+</html>

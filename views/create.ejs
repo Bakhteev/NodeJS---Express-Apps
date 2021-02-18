@@ -5,16 +5,23 @@
   <body>
     <%-include('./partials/nav.ejs') %>
     <div class="create-blog content">
-      <form>
-        <label for="title">Blog title:</label>
+      <form action="/blogs" method="POST" >
+        <label for="imgUrl">Blog img url:</label>
+        <input type="text" id="imgUrl" name="imgUrl" required />
+        <label for="title">Blog title :</label>
         <input type="text" id="title" name="title" required />
-        <label for="snippet">Blog snippet:</label>
-        <input type="text" id="snippet" name="snippet" required />
-        <label for="body">Blog body:</label>
-        <textarea id="body" name="body" required></textarea>
+        <label for="date">Blog date:</label>
+        <input type="text" id="date" name="date" required />
+        <label for="description">Blog description:</label>
+        <textarea
+          type="text"
+          id="description"
+          name="description"
+          required
+        ></textarea>
+
         <button type="submit">Submit</button>
       </form>
     </div>
-    <%- include('./partials/footer.ejs') %>
   </body>
 </html>
